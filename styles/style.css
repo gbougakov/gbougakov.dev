@@ -1,0 +1,29 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@screen dark-mode {
+  body, html {
+    @apply text-white bg-black;
+  }
+}
+
+.nav-router-link {
+  @apply py-1 text-orange-700 text-xs transition-all;
+}
+
+.nav-router-link-active {
+  @apply px-2 text-white bg-orange-700 rounded-full shadow;
+}
+
+.link {
+  @apply text-orange-700 underline;
+}
+
+@screen dark-mode {
+  .link {
+    @apply text-orange-300;
+  }
+}
