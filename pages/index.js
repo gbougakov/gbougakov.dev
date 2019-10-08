@@ -17,9 +17,6 @@ const Home = props => {
     <NextSeo
       title="George Bougakov"
       description="Automation geek, iOS and frontend developer"
-      additionalMetaTags={[
-        {property}
-      ]}
       openGraph={{
         title: 'George Bougakov',
         description: 'Automation geek, iOS and frontend developer',
