@@ -1,13 +1,42 @@
 import '../styles/style.css'
+import Head from 'next/head'
 import Layout from '../components/layout'
 import JumboLink from '../components/jumbolink'
 import {faAt, faCamera} from '@fortawesome/free-solid-svg-icons'
 import fetch from 'isomorphic-unfetch'
+import { NextSeo } from 'next-seo'
 import { faTwitter, faTelegram, faGithub, faInstagram, faKeybase, faProductHunt } from '@fortawesome/free-brands-svg-icons'
 import moment from 'moment'
 
 const Home = props => {
   return <Layout>
+    <Head>
+      <link rel="icon" type="image/png" href="favicon.png" />
+      <link rel="apple-touch-icon" type="image/png" href="apple-touch-icon.png" />
+    </Head>
+    <NextSeo
+      title="George Bougakov"
+      description="Automation geek, iOS and frontend developer"
+      additionalMetaTags={[
+        {property}
+      ]}
+      openGraph={{
+        title: 'George Bougakov',
+        description: 'Automation geek, iOS and frontend developer',
+        images: [
+          {
+            url: 'https://gbougakov.dev/opengraph.jpg',
+            width: 1200,
+            height: 600,
+            alt: 'George Bougakov',
+          }
+        ]
+      }}
+      twitter={{
+        handle: '@gbougakov',
+        cardType: 'summary_large_image',
+      }}
+    />
     <div>
       <div className="md:flex items-center">
         <img src="/portrait.jpg" alt="George's Photo" className="w-32 h-32 md:w-48 md:h-48 rounded-full shadow-lg" />
