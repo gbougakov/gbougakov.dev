@@ -22,6 +22,34 @@
   @apply text-orange-700 underline;
 }
 
+.tilt-inner {
+  transform: translateZ(500px);
+}
+
+.bg-gradient-orange {
+  background: linear-gradient(to right, #f12711, #f5af19);
+}
+
+.bg-gradient-blue {
+  background: linear-gradient(to right, #0083B0, #00B4DB);
+}
+
+.bg-gradient-black {
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(37,37,37,1) 100%);
+}
+
+.bg-gradient-pink {
+  background: linear-gradient(to right, #F27121, #E94057, #8A2387);
+}
+
+.bg-gradient-red {
+  background: linear-gradient(to bottom, #1F1C18, #8E0E00);
+}
+
+.bg-gradient-purple {
+  background: linear-gradient(to bottom, #348AC7, #7474BF);
+}
+
 @screen dark-mode {
   .link {
     @apply text-orange-300;

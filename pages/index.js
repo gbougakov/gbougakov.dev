@@ -90,49 +90,49 @@ const Home = props => {
         <h1 className="text-3xl md:text-4xl font-bold leading-tight">I am everywhere!</h1>
         <div className="flex flex-wrap -mx-2 mt-2 items-stretch">
           <div className="w-full md:w-1/2 xl:w-1/3 px-2 py-2">
-            <JumboLink icon={faAt} 
+            <JumboLink icon={faAt} txColor="bg-gradient-orange"
               className="border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white" 
               title="Email" description="In case you want to say hi" href="mailto:george@bygeorgenet.me"></JumboLink>
           </div>
 
           <div className="w-full md:w-1/2 xl:w-1/3 px-2 py-2">
-            <JumboLink icon={faTwitter} 
+            <JumboLink icon={faTwitter} txColor="bg-gradient-blue"
               className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white" 
               title="Twitter" description="Random retweets and quality shitposts" href="https://twitter.com/gbougakov"></JumboLink>
           </div>
 
           <div className="w-full md:w-1/2 xl:w-1/3 px-2 py-2">
-            <JumboLink icon={faTelegram} 
+            <JumboLink icon={faTelegram} txColor="bg-gradient-blue"
               className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white" 
               title="Telegram" description="Fastest way to reach me" href="https://tlg.name/gbougakov"></JumboLink>
           </div>
 
           <div className="w-full md:w-1/2 xl:w-1/3 px-2 py-2">
-            <JumboLink icon={faGithub} 
+            <JumboLink icon={faGithub} txColor="bg-gradient-black"
               className="border-black text-black hover:bg-black hover:text-white dark-mode:text-white dark-mode:border-white dark-mode:hover:text-black dark-mode:hover:bg-white" 
               title="GitHub" description="Code I've written, though most of the good stuff is private" href="https://github.com/gbougakov"></JumboLink>
           </div>
 
           <div className="w-full md:w-1/2 xl:w-1/3 px-2 py-2">
-            <JumboLink icon={faInstagram} 
+            <JumboLink icon={faInstagram} txColor="bg-gradient-pink"
               className="border-pink-700 text-pink-700 hover:bg-pink-700 hover:text-white" 
               title="Instagram" description="Selfies, cats, landscapes, cats and other cats" href="https://instagram.com/gbougakov"></JumboLink>
           </div>
 
           <div className="w-full md:w-1/2 xl:w-1/3 px-2 py-2">
-            <JumboLink icon={faCamera} 
+            <JumboLink icon={faCamera} txColor="bg-gradient-black"
               className="border-black text-black hover:bg-black hover:text-white dark-mode:text-white dark-mode:border-white dark-mode:hover:text-black dark-mode:hover:bg-white" 
               title="Unsplash" description="Cool photos licensed under Creative Commons Zero" href="https://unsplash.com/gbougakov"></JumboLink>
           </div>
 
           <div className="w-full md:w-1/2 xl:w-1/3 px-2 py-2">
-            <JumboLink icon={faKeybase} 
+            <JumboLink icon={faKeybase} txColor="bg-gradient-purple"
               className="border-indigo-700 text-indigo-700 hover:bg-indigo-700 hover:text-white" 
               title="Keybase" description="My cryptographically proven identitiy" href="https://keybase.io/gbougakov"></JumboLink>
           </div>
 
           <div className="w-full md:w-1/2 xl:w-1/3 px-2 py-2">
-            <JumboLink icon={faProductHunt} 
+            <JumboLink icon={faProductHunt} txColor="bg-gradient-red"
               className="border-red-700 text-red-700 hover:bg-red-700 hover:text-white" 
               title="Product Hunt" description="Things I made and liked" href="https://producthunt.com/@gbougakov"></JumboLink>
           </div>
