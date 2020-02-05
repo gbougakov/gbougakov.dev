@@ -5,9 +5,34 @@ import Layout from '../components/layout'
 import Marquee from 'react-double-marquee'
 import ThemeAwareImg from '../components/theme-aware-img'
 import UsesCard from '../components/uses-card'
+import { NextSeo } from 'next-seo'
 
 const Uses = props => (
   <Layout>
+    <Head>
+      <link rel="icon" type="image/png" href="/favicon.png" />
+      <link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon.png" />
+    </Head>
+    <NextSeo
+      title="Stuff I use · George Bougakov"
+      description="Automation geek, iOS and frontend developer"
+      openGraph={{
+        title: 'Stuff I use · George Bougakov',
+        description: 'Automation geek, iOS and frontend developer',
+        images: [
+          {
+            url: 'https://gbougakov.dev/opengraph.jpg',
+            width: 1200,
+            height: 600,
+            alt: 'George Bougakov',
+          }
+        ]
+      }}
+      twitter={{
+        handle: '@gbougakov',
+        cardType: 'summary_large_image',
+      }}
+    />
     <div className="w-full">
       <div className="breakout whitespace-no-wrap">
         <Marquee delay={0} childMargin={0}>
