@@ -10,7 +10,7 @@ const JumboLink = props => {
         </span>
         <div className="ml-4">
           <h1 className="text-xl font-bold leading-snug">{props.title}</h1>
-          <p className="leading-snug">{props.description}</p>
+          <p className="leading-snug tracking-tight">{props.description}</p>
         </div>
       </div>
     </Tilt>

@@ -10,6 +10,12 @@
   }
 }
 
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
 .nav-router-link {
   @apply py-1 text-orange-700 text-xs transition-all;
 }
@@ -20,6 +26,9 @@
 
 .link {
   @apply text-orange-700 underline;
+}
+.accent-text {
+  @apply text-orange-700;
 }
 
 .tilt-inner {
@@ -53,5 +62,28 @@
 @screen dark-mode {
   .link {
     @apply text-orange-300;
+  }
+  .accent-text {
+    @apply text-orange-300;
+  }
+}
+
+
+.breakout {
+  margin-left: -2.5rem;
+  width: 100vw;
+}
+
+@screen md {
+  .breakout {
+    margin-left: -5rem;
+    width: 100vw;
+  }
+}
+
+@screen lg {
+  .breakout {
+    margin-left: calc(-25% - 5rem);
+    width: 100vw;
   }
 }

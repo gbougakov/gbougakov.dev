@@ -36,7 +36,9 @@ const Home = props => {
     />
     <div>
       <div className="md:flex items-center">
-        <img src="/portrait.jpg" alt="George's Photo" className="w-32 h-32 md:w-48 md:h-48 rounded-full shadow-lg" />
+        <div className="w-32 h-32 md:w-48 md:h-48 flex items-center">
+          <img src="/portrait.jpg" alt="George's Photo" className="rounded-full shadow-lg" />
+        </div>
         <div className="mt-5 md:ml-16 md:mt-0">
           <h1 className="text-4xl md:text-6xl font-bold leading-none">George Bougakov</h1>
           <h2 className="text-2xl md:text-3xl mt-1 leading-tight">Automation geek, iOS and frontend developer</h2>
@@ -45,8 +47,8 @@ const Home = props => {
 
       <div className="mt-8 md:mt-16">
         <h1 className="text-3xl md:text-4xl font-bold">Intro</h1>
-        <p className="text-xl md:text-2xl leading-snug">
-          Hi! I'm {props.age} years old and I'm an iOS and web developer with a passion for automation. Currently, I am an automation engineer at <a href="https://vimbox.com" className="link">Skyeng</a>, the largest edtech company in Russia, where I simplify the life of 70+ developers. Oh, and also...
+        <p className="text-xl md:text-2xl leading-snug tracking-tight">
+          Hi! I'm {props.age} years old and I'm an iOS and web developer with a passion for automation. Currently, I am an automation engineer at <a href="https://skyeng.ru" className="link">Skyeng</a>, the largest edtech company in Russia, where I simplify the life of 70+ developers. Oh, and also...
         </p>
       </div>
 
@@ -139,7 +141,7 @@ const Home = props => {
         </div>
       </div>
       <div className="w-full mt-8">
-        <h2 className="text-sm leading-snug">&copy; George Bougakov, 2019</h2>
+        <h2 className="text-sm leading-snug">&copy; George Bougakov, 2020</h2>
       </div>
     </div>
   </Layout>
