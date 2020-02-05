@@ -2,11 +2,12 @@ import '../styles/style.css'
 import Head from 'next/head'
 import Layout from '../components/layout'
 import JumboLink from '../components/jumbolink'
-import {faAt, faCamera} from '@fortawesome/free-solid-svg-icons'
+import {faAt, faCamera, faCommentAlt} from '@fortawesome/free-solid-svg-icons'
 import fetch from 'isomorphic-unfetch'
 import { NextSeo } from 'next-seo'
 import { faTwitter, faTelegram, faGithub, faInstagram, faKeybase, faProductHunt } from '@fortawesome/free-brands-svg-icons'
 import moment from 'moment'
+import Link from 'next/link'
 
 const Home = props => {
   return <Layout>
@@ -93,52 +94,57 @@ const Home = props => {
         <div className="flex flex-wrap -mx-2 mt-2 items-stretch">
           <div className="w-full md:w-1/2 xl:w-1/3 px-2 py-2">
             <JumboLink icon={faAt} txColor="bg-gradient-orange"
-              className="border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white" 
               title="Email" description="In case you want to say hi" href="mailto:george@bygeorgenet.me"></JumboLink>
           </div>
 
           <div className="w-full md:w-1/2 xl:w-1/3 px-2 py-2">
             <JumboLink icon={faTwitter} txColor="bg-gradient-blue"
-              className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white" 
               title="Twitter" description="Random retweets and quality shitposts" href="https://twitter.com/gbougakov"></JumboLink>
           </div>
 
           <div className="w-full md:w-1/2 xl:w-1/3 px-2 py-2">
             <JumboLink icon={faTelegram} txColor="bg-gradient-blue"
-              className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white" 
               title="Telegram" description="Fastest way to reach me" href="https://tlg.name/gbougakov"></JumboLink>
           </div>
 
           <div className="w-full md:w-1/2 xl:w-1/3 px-2 py-2">
             <JumboLink icon={faGithub} txColor="bg-gradient-black"
-              className="border-black text-black hover:bg-black hover:text-white dark-mode:text-white dark-mode:border-white dark-mode:hover:text-black dark-mode:hover:bg-white" 
               title="GitHub" description="Code I've written, though most of the good stuff is private" href="https://github.com/gbougakov"></JumboLink>
           </div>
 
           <div className="w-full md:w-1/2 xl:w-1/3 px-2 py-2">
             <JumboLink icon={faInstagram} txColor="bg-gradient-pink"
-              className="border-pink-700 text-pink-700 hover:bg-pink-700 hover:text-white" 
               title="Instagram" description="Selfies, cats, landscapes, cats and other cats" href="https://instagram.com/gbougakov"></JumboLink>
           </div>
 
           <div className="w-full md:w-1/2 xl:w-1/3 px-2 py-2">
             <JumboLink icon={faCamera} txColor="bg-gradient-black"
-              className="border-black text-black hover:bg-black hover:text-white dark-mode:text-white dark-mode:border-white dark-mode:hover:text-black dark-mode:hover:bg-white" 
               title="Unsplash" description="Cool photos licensed under Creative Commons Zero" href="https://unsplash.com/gbougakov"></JumboLink>
           </div>
 
           <div className="w-full md:w-1/2 xl:w-1/3 px-2 py-2">
             <JumboLink icon={faKeybase} txColor="bg-gradient-purple"
-              className="border-indigo-700 text-indigo-700 hover:bg-indigo-700 hover:text-white" 
               title="Keybase" description="My cryptographically proven identitiy" href="https://keybase.io/gbougakov"></JumboLink>
           </div>
 
           <div className="w-full md:w-1/2 xl:w-1/3 px-2 py-2">
             <JumboLink icon={faProductHunt} txColor="bg-gradient-red"
-              className="border-red-700 text-red-700 hover:bg-red-700 hover:text-white" 
               title="Product Hunt" description="Things I made and liked" href="https://producthunt.com/@gbougakov"></JumboLink>
           </div>
+
+          <div className="w-full md:w-1/2 xl:w-1/3 px-2 py-2">
+            <JumboLink icon={faCommentAlt} txColor="bg-gradient-turquoise"
+              title="Habr" description="You can read my posts in Russian here" href="https://habr.com/ru/users/gbougakov/"></JumboLink>
+          </div>
         </div>
+      </div>
+      <div className="mt-8 md:mt-16">
+        <h1 className="text-3xl md:text-4xl font-bold leading-tight">Other cool links</h1>
+        <p className="text-xl mt-2 font-medium">
+          <Link href="/uses">
+            <a className="accent-text">Apps and services I use →</a>
+          </Link>
+        </p>
       </div>
       <div className="w-full mt-8">
         <h2 className="text-sm leading-snug">&copy; George Bougakov, 2020</h2>

@@ -59,6 +59,10 @@ html { font-family: 'Inter', sans-serif; }
   background: linear-gradient(to bottom, #348AC7, #7474BF);
 }
 
+.bg-gradient-turquoise {
+  background: linear-gradient(to right, #136a8a, #267871);
+}
+
 @screen dark-mode {
   .link {
     @apply text-orange-300;
