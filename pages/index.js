@@ -145,6 +145,12 @@ const Home = props => {
             <a className="accent-text">Apps and services I use →</a>
           </Link>
         </p>
+        <p className="text-xl mt-2 font-medium">
+          <Link href="/donate">
+            <a className="accent-text">Donate →</a>
+          </Link>
+        </p>
+        
       </div>
       <div className="w-full mt-8">
         <h2 className="text-sm leading-snug">&copy; George Bougakov, 2020</h2>

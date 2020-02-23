@@ -32,6 +32,7 @@
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-double-marquee": "^0.3.4",
+    "react-range": "^1.5.3",
     "react-tilt": "^0.1.4",
     "tailwindcss": "^1.1.2",
     "tailwindcss-transitions": "^2.1.0"
