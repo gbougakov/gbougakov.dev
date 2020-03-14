@@ -1,5 +1,5 @@
 {
   "version": 2,
   "alias": ["gbougakov.dev"],
-  "region": ["all"]
+  "regions": ["all"]
 }
