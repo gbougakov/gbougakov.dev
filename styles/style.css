@@ -43,6 +43,11 @@ html { font-family: 'Inter', sans-serif; }
   background: linear-gradient(to right, #0083B0, #00B4DB);
 }
 
+.mono {
+  @apply font-mono;
+  color: rgb(212, 0, 255);
+}
+
 .bg-gradient-black {
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(37,37,37,1) 100%);
 }

@@ -153,20 +153,24 @@ const Home = props => {
         
       </div>
       <div className="w-full mt-8">
-        <h2 className="text-sm leading-snug">&copy; George Bougakov, 2020</h2>
+        <h2 className="text-sm leading-snug">
+            &copy; George Bougakov, 2020. Rendered at <span className="mono">`{props.originRegion}`</span>, served via <span className="mono">`{props.edgeRegion}`</span>
+          </h2>
       </div>
     </div>
   </Layout>
 }
 
-Home.getInitialProps = async ({ req }) => {
+export async function getServerSideProps({ req }) {
   const res = await fetch('https://makerrank.co/@gbougakov.json').then(res => res.json())
-  return { 
+  return {props: { 
     totalUpvotes: res.upvotes, 
     avgUpvotes: res.upvotes / res.products.length, 
     rank: res.rank,
-    age: moment().diff(moment('2005-04-18'), 'years')
-  }
+    age: moment().diff(moment('2005-04-18'), 'years'),
+    originRegion: process.env.NOW_REGION,
+    edgeRegion: req.headers['x-now-trace'] || 'n/a'
+  }}
 }
 
 export default Home
