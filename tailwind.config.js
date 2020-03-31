@@ -9,8 +9,5 @@ module.exports = {
   },
   variants: {
     boxShadow: ['responsive', 'hover', 'focus']
-  },
-  plugins: [
-    require('tailwindcss-transitions')()
-  ]
+  }
 }
