@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import {useRouter} from 'next/router'
-import '../styles/style.css'
 
 const Layout = props => {
   const router = useRouter()

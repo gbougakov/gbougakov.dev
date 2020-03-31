@@ -1,4 +1,3 @@
-import '../styles/style.css'
 import Head from 'next/head'
 import Layout from '../components/layout'
 import JumboLink from '../components/jumbolink'
@@ -168,7 +167,7 @@ export async function getServerSideProps({ req }) {
     avgUpvotes: res.upvotes / res.products.length, 
     rank: res.rank,
     age: moment().diff(moment('2005-04-18'), 'years'),
-    originRegion: process.env.NOW_REGION,
+    originRegion: process.env.NOW_REGION || 'n/a',
     edgeRegion: req.headers['x-now-trace'] || 'n/a'
   }}
 }
