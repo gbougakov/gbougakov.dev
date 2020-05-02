@@ -82,12 +82,12 @@ const Uses = props => (
 
         <h2 className="text-3xl md:text-4xl font-bold mt-6 md:mt-10 leading-tight">Hosting</h2>
         <UsesCard
-          title="ZEIT Now"
+          title="Vercel"
           darkSrc="/uses-icons/zeit-white-triangle.svg"
           lightSrc="/uses-icons/zeit-black-triangle.svg"
-          href="https://zeit.co/"
+          href="https://vercel.com/"
         >
-          Now is amazing. It is blazing-fast and the reason I use it is that I can get a project up and running in about a minute, which is about 30 times faster than deploying it on a VPS
+          Vercel is amazing. It is blazing-fast and the reason I use it is that I can get a project up and running in about a minute, which is about 30 times faster than deploying it on a VPS
         </UsesCard>
         <UsesCard
           title="Hetzner Cloud"
