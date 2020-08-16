@@ -65,7 +65,37 @@ const Home = () => {
         }}
       />
       <div>
-        <div className="items-center md:flex">
+        <div className="flex flex-col items-center justify-center py-20 text-center">
+          <div className="w-1/5">
+            <svg
+              viewBox="0 0 1024 768"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="1024" height="768" rx="128" fill="white" />
+              <rect y="256" width="1024" height="256" fill="#FF0000" />
+              <rect
+                x="3"
+                y="3"
+                width="1018"
+                height="762"
+                rx="125"
+                stroke="black"
+                stroke-opacity="0.25"
+                stroke-width="6"
+              />
+            </svg>
+          </div>
+          <h1 className="mt-4 text-xl font-bold">#LongLiveBelarus</h1>
+          <p className="mt-2">
+            This message is published as a mark of respect and solidarity to the
+            people of Belarus who are currently protesting against the political
+            repression and the results of the 2020 presidential election. Stay
+            strong.
+          </p>
+        </div>
+
+        <div className="items-center mt-8 md:mt-16 md:flex">
           <div className="flex items-center w-32 h-32 md:w-48 md:h-48">
             <img
               src="/portrait.jpg"
