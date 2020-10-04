@@ -1,10 +1,6 @@
 import Head from "next/head";
 import Layout from "../components/layout";
-import Link from "next/link";
-import useSWR from "swr";
 import { NextSeo } from "next-seo";
-
-const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
 const SkyengLogo = () => (
   <svg
@@ -52,9 +48,9 @@ const SkyengLogo = () => (
         width="31.422"
         height="34.307"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -80,13 +76,6 @@ const ColorLink = (props) => (
 );
 
 const Home = () => {
-  const { data, error } = useSWR(
-    "https://makerrank.co/@gbougakov.json",
-    fetcher
-  );
-
-  const props = {};
-
   return (
     <Layout>
       <Head>
@@ -118,8 +107,8 @@ const Home = () => {
         }}
       />
       <div>
-        <h1 className="text-5xl font-bold">George Bougakov</h1>
-        <p className="text-lg">
+        <h1 className="text-4xl font-bold leading-none">George Bougakov</h1>
+        <p className="mt-4 text-lg">
           Web developer with a passion for automation and design
         </p>
 
@@ -170,8 +159,8 @@ const Home = () => {
             and minimize the amount of boring tasks that employees have to do
             instead of doing their job
           </p>
-          <h3 className="mt-4 text-sm font-bold">Talks and posts</h3>
-          <div className="mt-2 grid grid-cols-2 gap-x-4">
+          <h3 className="mt-4 text-xl font-bold">Talks and posts</h3>
+          <div className="mt-2 grid grid-cols-1 gap-y-4 md:grid-cols-2 gap-x-4">
             <div className="space-y-1">
               <p className="font-medium">
                 Making a corporate superapp with Slack and Node.js
@@ -219,8 +208,8 @@ const Home = () => {
             now. I was featured four times on Product Hunt and even got a Golden
             Kitty! (which is actually made from silver-colored plastic)
           </p>
-          <h3 className="mt-4 text-sm font-bold">Some notable ones</h3>
-          <div className="mt-2 grid grid-cols-2 gap-x-4">
+          <h3 className="mt-4 text-xl font-bold">Some notable ones</h3>
+          <div className="mt-2 grid grid-cols-1 gap-y-4 md:grid-cols-2 gap-x-4">
             <div className="space-y-1">
               <p className="font-medium">Docket</p>
               <p className="text-sm">
@@ -257,9 +246,9 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="mt-16 grid grid-cols-2 gap-x-4">
+        <div className="mt-16 grid grid-cols-1 gap-y-4 md:grid-cols-2 gap-x-4">
           <div className="space-y-1">
-            <p className="font-bold" id="social">
+            <p className="text-xl font-bold" id="social">
               You can find me on
             </p>
             <ul>
