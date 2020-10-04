@@ -18,8 +18,12 @@ html { font-family: 'Inter', sans-serif; }
   html { font-family: 'Inter var', sans-serif; }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .nav-router-link {
-  @apply py-1 text-orange-700 text-xs transition-all;
+  @apply py-1 text-xs text-orange-700 transition-all;
 }
 
 .nav-router-link-active {
