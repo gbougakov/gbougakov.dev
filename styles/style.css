@@ -11,7 +11,6 @@
 }
 
 @import url('https://rsms.me/inter/inter.css');
-@import url('https://fonts-cdn.gbougakov.dev/jetbrains-mono/stylesheet.css');
 
 html { font-family: 'Inter', sans-serif; }
 @supports (font-variation-settings: normal) {
@@ -20,86 +19,6 @@ html { font-family: 'Inter', sans-serif; }
 
 html {
   scroll-behavior: smooth;
-}
-
-.nav-router-link {
-  @apply py-1 text-xs text-orange-700 transition-all;
-}
-
-.nav-router-link-active {
-  @apply px-2 text-white bg-orange-700 rounded-full shadow;
-}
-
-.link {
-  @apply text-orange-700 underline;
-}
-.accent-text {
-  @apply text-orange-700;
-}
-
-.tilt-inner {
-  transform: translateZ(500px);
-}
-
-.bg-gradient-orange {
-  background: linear-gradient(to right, #f12711, #f5af19);
-}
-
-.bg-gradient-blue {
-  background: linear-gradient(to right, #0083B0, #00B4DB);
-}
-
-.mono {
-  font-family: 'JetBrains Mono', 'Courier New', Courier, monospace;
-  color: #D408C3;
-}
-
-.bg-gradient-black {
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(37,37,37,1) 100%);
-}
-
-.bg-gradient-pink {
-  background: linear-gradient(to right, #F27121, #E94057, #8A2387);
-}
-
-.bg-gradient-red {
-  background: linear-gradient(to bottom, #1F1C18, #8E0E00);
-}
-
-.bg-gradient-purple {
-  background: linear-gradient(to bottom, #348AC7, #7474BF);
-}
-
-.bg-gradient-turquoise {
-  background: linear-gradient(to right, #136a8a, #267871);
-}
-
-@screen dark-mode {
-  .link {
-    @apply text-orange-300;
-  }
-  .accent-text {
-    @apply text-orange-300;
-  }
-}
-
-.breakout {
-  margin-left: -2.5rem;
-  width: 100vw;
-}
-
-@screen md {
-  .breakout {
-    margin-left: -5rem;
-    width: 100vw;
-  }
-}
-
-@screen lg {
-  .breakout {
-    margin-left: calc(-25% - 5rem);
-    width: 100vw;
-  }
 }
 
 /* Make clicks pass-through */
