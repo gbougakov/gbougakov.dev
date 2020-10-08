@@ -21,7 +21,7 @@
   "dependencies": {
    "@zeit/next-css": "^1.0.1",
     "autoprefixer": "^9.6.4",
-    "next": "^9.5.3",
+    "next": "^9.5.4",
     "next-seo": "^4.4.0",
     "nprogress": "^0.2.0",
     "react": "^16.10.2",
