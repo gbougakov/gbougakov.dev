@@ -2,8 +2,6 @@
 
 @tailwind components;
 
-@tailwind utilities;
-
 body,
 html {
   @apply dark:text-white dark:bg-black;
@@ -62,6 +60,10 @@ html {
 
 .btn-colored {
   @apply text-white hover:bg-opacity-75;
+}
+
+.btn-bordered {
+  @apply bg-black border border-black shadow dark:bg-white bg-opacity-5 dark:border-white border-opacity-10 hover:border-opacity-25;
 }
 
 .link {

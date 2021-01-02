@@ -52,7 +52,7 @@ export default function Entry({
 
       <div className="flex flex-col flex-1 ml-4 space-y-4">
         <div className="flex flex-col pt-1 contents-center">
-          <span className="font-medium text-primary">{title}</span>
+          <span className="font-semibold text-primary">{title}</span>
           {datetime && (
             <span className="text-sm text-tertiary">{datetime}</span>
           )}

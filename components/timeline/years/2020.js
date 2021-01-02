@@ -136,13 +136,13 @@ export default function Year2020() {
         divider={false}
       >
         <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2">
-          <a>
+          <a href="https://unsplash.com/photos/x0-ytRcMxVE">
             <img
               src="https://storage.yandexcloud.net/gb-assets-hot/portfolio-site-images/saint-petersburg/E0BEBA5A-78E5-4546-B9E4-E2B591FE8AD6.jpeg"
               className="rounded-lg"
             />
           </a>
-          <a>
+          <a href="https://unsplash.com/photos/Id6SZn3mx9E">
             <img
               src="https://storage.yandexcloud.net/gb-assets-hot/portfolio-site-images/saint-petersburg/8B640F53-2D33-4BB0-9B9D-2A40388AE575.jpeg"
               className="rounded-lg"

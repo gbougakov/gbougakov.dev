@@ -49,7 +49,7 @@ const Home = () => {
             Email me
           </a>
           <a
-            className="border border-black shadow btn-base dark:border-white border-opacity-10 hover:border-opacity-25"
+            className="btn-base btn-bordered"
             href="#social"
           >
             Other social links
