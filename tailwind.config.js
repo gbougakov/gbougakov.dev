@@ -1,14 +1,9 @@
 module.exports = {
-  purge: ["./components/**/*.js", "./pages/**/*.js"],
+  purge: [],
+  darkMode: "media", // or 'media' or 'class'
   theme: {
-    extend: {
-      screens: {
-        "dark-mode": { raw: "(prefers-color-scheme: dark)" },
-        //'light-mode': {raw: '(prefers-color-scheme: light)'}
-      },
-    },
+    extend: {},
   },
-  variants: {
-    boxShadow: ["responsive", "hover", "focus"],
-  },
+  variants: {},
+  plugins: [],
 };

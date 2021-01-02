@@ -4,17 +4,20 @@
 
 @tailwind utilities;
 
-@screen dark-mode {
-  body, html {
-    @apply text-white bg-black;
-  }
+body,
+html {
+  @apply dark:text-white dark:bg-black;
 }
 
-@import url('https://rsms.me/inter/inter.css');
+@import url("https://rsms.me/inter/inter.css");
 
-html { font-family: 'Inter', sans-serif; }
+html {
+  font-family: "Inter", sans-serif;
+}
 @supports (font-variation-settings: normal) {
-  html { font-family: 'Inter var', sans-serif; }
+  html {
+    font-family: "Inter var", sans-serif;
+  }
 }
 
 html {
@@ -51,4 +54,16 @@ html {
   -webkit-transform: rotate(3deg) translate(0px, -4px);
   -ms-transform: rotate(3deg) translate(0px, -4px);
   transform: rotate(3deg) translate(0px, -4px);
+}
+
+.btn-base {
+  @apply px-8 py-3 text-sm font-medium text-center shadow transition-all duration-200 rounded-md;
+}
+
+.btn-colored {
+  @apply text-white hover:bg-opacity-75;
+}
+
+.link {
+  @apply text-indigo-700 hover:text-indigo-300 dark:text-indigo-300 dark:hover:text-indigo-700;
 }
