@@ -2,6 +2,7 @@ import Head from "next/head";
 import Layout from "../components/core/layout";
 import { NextSeo } from "next-seo";
 import Timeline from "../components/timeline/index";
+import Link from "next/link";
 
 const Home = () => {
   return (
@@ -48,12 +49,12 @@ const Home = () => {
           >
             Email me
           </a>
-          <a
-            className="btn-base btn-bordered"
-            href="#social"
-          >
+          <a className="btn-base btn-bordered" href="#social">
             Other social links
           </a>
+          <Link href="/donate">
+            <a className="btn-base btn-bordered">Donate</a>
+          </Link>
         </div>
 
         <div className="mt-20">
