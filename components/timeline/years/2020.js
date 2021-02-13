@@ -60,6 +60,7 @@ export default function Year2020() {
           src="//www.ntv.ru/embed/1954560?utm_content=novosti"
           frameborder="0"
           loading="lazy"
+          sandbox="allow-scripts"
           allow="autoplay; fullscreen"
         ></iframe>
       </Entry>
