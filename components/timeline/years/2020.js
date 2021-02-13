@@ -10,6 +10,7 @@ import {
   Tv,
   Youtube,
 } from "react-feather";
+import PrivacyFrame from "../../core/privacy-frame";
 import Entry, { DateEntry } from "../entry";
 import PostCard from "../postcard";
 
@@ -55,14 +56,12 @@ export default function Year2020() {
           George" and misspelled the word "company"), but it's still worth
           mentioning
         </p>
-        <iframe
+        <PrivacyFrame
           className="w-full h-64"
-          src="//www.ntv.ru/embed/1954560?utm_content=novosti"
-          frameborder="0"
-          loading="lazy"
-          sandbox="allow-scripts"
+          src="https://www.ntv.ru/embed/1954560"
+          frameBorder="0"
           allow="autoplay; fullscreen"
-        ></iframe>
+        />
       </Entry>
       <Entry
         title={`Made a Telegram bot that makes it easier to join class video calls`}
