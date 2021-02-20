@@ -65,7 +65,7 @@ const Home = () => {
         {clubhouseInfo && (
           <div className="flex justify-center mt-10">
             <a href={`https://joinclubhouse.com/room/${clubhouseInfo.roomId}`}>
-              <div className="rounded-full px-6 py-3 flex space-x-3 items-center bg-black dark:bg-white bg-opacity-10">
+              <div className="rounded-lg md:rounded-full px-6 py-4 flex flex-col md:flex-row text-center space-x-3 space-y-2 md:space-y-0 items-center bg-black dark:bg-white bg-opacity-10">
                 <span role="img" alt="Clubhouse Logo">
                   👋
                 </span>
