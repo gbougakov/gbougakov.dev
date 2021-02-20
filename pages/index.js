@@ -3,8 +3,13 @@ import Layout from "../components/core/layout";
 import { NextSeo } from "next-seo";
 import Timeline from "../components/timeline/index";
 import Link from "next/link";
+import useSWR from "swr";
+
+const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
 const Home = () => {
+  const { data: clubhouseInfo } = useSWR("/api/clubhouse", fetcher);
+
   return (
     <Layout>
       <Head>
@@ -56,6 +61,22 @@ const Home = () => {
             <a className="btn-base btn-bordered">Donate</a>
           </Link>
         </div>
+
+        {clubhouseInfo && (
+          <div className="flex justify-center mt-10">
+            <a href={`https://joinclubhouse.com/room/${clubhouseInfo.roomId}`}>
+              <div className="rounded-full px-6 py-3 flex space-x-3 items-center bg-black dark:bg-white bg-opacity-10">
+                <span role="img" alt="Clubhouse Logo">
+                  👋
+                </span>
+                <span>
+                  Currently speaking about{" "}
+                  <strong>{clubhouseInfo.roomName}</strong> on Clubhouse →
+                </span>
+              </div>
+            </a>
+          </div>
+        )}
 
         <div className="mt-20">
           <Timeline />
