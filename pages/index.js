@@ -40,7 +40,7 @@ const Home = () => {
           />
         </div>
         <h1 className="mt-6 text-4xl font-extrabold text-center md:text-7xl">
-          Hey there, I'm&nbsp;George 👋
+          <a href="https://translate.google.com/?text=привет" target="_blank">Привет</a>, I'm&nbsp;George 👋
         </h1>
         <p className="mt-6 text-xl text-center md:text-2xl">
           I'm a web developer with a passion for automation and design living in
