@@ -4,11 +4,23 @@ import { NextSeo } from "next-seo";
 import Timeline from "../components/timeline/index";
 import Link from "next/link";
 import useSWR from "swr";
+import { useEffect, useState } from "react";
+import sample from "lodash.sample";
 
 const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
 const Home = () => {
   const { data: clubhouseInfo } = useSWR("/api/clubhouse", fetcher);
+  const [donateLink, setDonateLink] = useState("");
+
+  useEffect(() => {
+    const links = [
+      "https://donate.ovdinfo.org",
+      "https://fbk.info/donate",
+      "https://donate.zona.media/",
+    ];
+    setDonateLink(sample(links));
+  }, []);
 
   return (
     <Layout>
@@ -40,7 +52,10 @@ const Home = () => {
           />
         </div>
         <h1 className="mt-6 text-4xl font-extrabold text-center md:text-7xl">
-          <a href="https://translate.google.com/?text=привет" target="_blank">Привет</a>, I'm&nbsp;George 👋
+          <a href="https://translate.google.com/?text=привет" target="_blank">
+            Привет
+          </a>
+          , I'm&nbsp;George 👋
         </h1>
         <p className="mt-6 text-xl text-center md:text-2xl">
           I'm a web developer with a passion for automation and design living in
@@ -57,12 +72,10 @@ const Home = () => {
           <a className="btn-base btn-bordered" href="#social">
             Other social links
           </a>
-          <Link href="/donate">
-            <a className="btn-base btn-bordered">Donate</a>
-          </Link>
+          <a className="btn-base btn-bordered" href={donateLink}>Donate</a>
         </div>
 
-        {(clubhouseInfo && clubhouseInfo.roomId) && (
+        {clubhouseInfo && clubhouseInfo.roomId && (
           <div className="flex justify-center mt-10">
             <a href={`https://joinclubhouse.com/room/${clubhouseInfo.roomId}`}>
               <div className="rounded-lg md:rounded-full px-6 py-4 flex flex-col md:flex-row text-center space-x-3 space-y-2 md:space-y-0 items-center bg-black dark:bg-white bg-opacity-10">
@@ -82,7 +95,7 @@ const Home = () => {
           <Timeline />
         </div>
 
-        <div className="mt-8 grid grid-cols-1 gap-y-8 md:grid-cols-2 gap-x-4">
+        <div className="mt-8 grid grid-cols-1 gap-y-8 md:grid-cols-2 gap-x-16">
           <div className="space-y-1">
             <p className="text-xl font-bold" id="social">
               You can find me on
@@ -119,6 +132,7 @@ const Home = () => {
                 </a>
               </li>
             </ul>
+            <p className="mt-2 text-sm">Please don't DM me anywhere if we've never met because I'll probably block you. Use email, ffs</p>
           </div>
           <div className="text-sm space-y-1">
             <p>
